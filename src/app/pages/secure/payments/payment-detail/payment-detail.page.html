@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Transações" defaultHref="/payments"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Detalhes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ion-padding">
+
+    <ion-list-header class="ion-list-header-small">
+      <ion-label>Informações</ion-label>
+    </ion-list-header>
+
+    <ion-list class="list-custom" lines="full">
+      <ion-item>
+        <ion-label>
+          <p>Valor</p>
+        </ion-label>
+        <ion-badge color="danger" mode="ios" slot="end">- R$8.60</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <p>Situação</p>
+        </ion-label>
+        <ion-input readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" value="Pago"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <p>Data</p>
+        </ion-label>
+        <ion-input readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" value="01 Junho, 2023 / 09:21"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <p>Local</p>
+        </ion-label>
+        <ion-input readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" value="Restaurantes"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <p>ID da transação</p>
+        </ion-label>
+        <ion-input readonly slot="end" class="font-size-small ion-text-right ion-no-padding-end" value="848-14E-11V"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <hr class="hr-medium">
+
+    <ion-list-header class="ion-list-header-small">
+      <ion-label>Ações</ion-label>
+    </ion-list-header>
+
+    <ion-list class="list-custom" lines="full">
+      <ion-item detail="false">
+        <ion-avatar slot="start" class="ion-avatar-default-icon">
+          <ion-icon color="primary" name="receipt"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h3>Comprovante</h3>
+          <p class="font-size-smallest">Ver o comprovante Digital</p>
+        </ion-label>
+        <ion-button slot="end">
+          Visualizar
+        </ion-button>
+      </ion-item>
+      <ion-item button>
+        <ion-avatar slot="start" class="ion-avatar-default-icon">
+          <ion-icon color="primary" name="chatbox"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h3>Editar</h3>
+          <p class="font-size-smallest">Clique para editar transação</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+  </div>
+
+</ion-content>

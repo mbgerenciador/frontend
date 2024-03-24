@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar class="ion-no-border">
+    <ion-buttons slot="start">
+      <ion-back-button text="Login" defaultHref="/signin"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ion-padding ion-full-height ion-flex ion-flex-center">
+
+    <div class="logo-container">
+      <h1 class="logo-placeholder">$MB</h1>
+      <p>Crie a sua conta gratuitamente.</p>
+    </div>
+
+    <form class="form-default" [formGroup]="signup_form" (submit)="signUp()">
+
+      <ion-list class="item-card-list" lines="none">
+
+        <ion-item>
+          <ion-label color="tertiary" position="stacked">Email</ion-label>
+          <ion-input formControlName="email" type="email" autocomplete="off"
+            placeholder="Digite seu email"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top-small">
+          <ion-label color="tertiary" position="stacked">Senha</ion-label>
+          <ion-input formControlName="password" type="password" placeholder="Sua senha"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top-small">
+          <ion-label color="tertiary" position="stacked">Repita a senha</ion-label>
+          <ion-input formControlName="password_repeat" type="password" placeholder="Digite novamente"></ion-input>
+        </ion-item>
+
+      </ion-list>
+
+      <ion-button class="ion-margin-top" type="submit" expand="block" color="primary">
+        Cadastro gratuito
+      </ion-button>
+    </form>
+
+    <div class="ion-text-center ion-margin-top">
+      <ion-text color="medium">
+        <small>&copy; {{current_year}} $MB</small>
+      </ion-text>
+    </div>
+
+  </div>
+
+</ion-content>
